@@ -7,7 +7,14 @@ on:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
+on:
+  workflow_dispatch:
 
+  push:
+    branches: [ "main" ]
+
+  pull_request:
+    branches: [ "main" ]
 jobs:
   fetch-secret-from-conjur:
     runs-on: ubuntu-latest
